@@ -120,14 +120,14 @@ a{
     background-color:#ddd;/* rgb(121, 119, 119);*/
     border-radius: 0 3rem 0 3rem;
     /* Add shadows to create the "card" effect */
-    box-shadow: 0;
+    box-shadow: 0rem;
     transition: 0.3s;
 }
 .experience .lead , .experience .text-light{
     color: #444
 }
 .exp-container{
-    padding: 1px 1px;
+    padding: 0;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -212,7 +212,32 @@ a{
     display: none;
   }
   
-  @media screen and (max-width: 580px) {
+  
+  .cf:before, .cf:after {
+    content: "";
+    display: table;
+  }
+  
+  .cf:after {
+    clear: both;
+  }
+  
+  .cf {
+    zoom: 1;
+  }
+
+
+footer{
+    background-color: #ddd;
+    color: #2a2c35;
+
+}
+footer .footer-bottom{
+    padding: 0.5rem;
+}
+
+/**for phone**/
+@media screen and (max-width: 580px) {
     .hide-on-small{
         display: none;
     }
@@ -245,7 +270,7 @@ a{
    
     .experience-main{
         display: grid;
-        grid-gap: 2px;
+        grid-gap: 5px;
         grid-template-columns: repeat(1, 1fr);
     }
     nav {
@@ -294,32 +319,3 @@ a{
       position: relative;
     }
   }
-  .cf:before, .cf:after {
-    content: "";
-    display: table;
-  }
-  
-  .cf:after {
-    clear: both;
-  }
-  
-  .cf {
-    zoom: 1;
-  }
-
-
-footer{
-    background-color: #ddd;
-    color: #2a2c35;
-
-}
-footer .footer-bottom{
-    padding: 0.5rem;
-}
-.transparent-bg{
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";       /* IE 8 */
-    filter: alpha(opacity=20);  /* IE 5-7 */
-    -moz-opacity: 0.2;          /* Netscape */
-    -khtml-opacity: 0.2;        /* Safari 1.x */
-    opacity: 0.2; 
-}
