@@ -19,7 +19,7 @@ $(function() {
   $('.open-menu').height($(window).height());
 });
 // Smooth Scrolling
-$('.cf a').on('click', function(event) {
+$(' a').on('click', function(event) {
   if (this.hash !== '') {
     event.preventDefault();
 
@@ -35,4 +35,7 @@ $('.cf a').on('click', function(event) {
       }
     );
   }
+});
+$('.scrollToTop').on('click', function(e) {
+  $('html, body').animate({scrollTop: "0"},800);
 });

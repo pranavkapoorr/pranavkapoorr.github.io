@@ -16,13 +16,31 @@ body{
 50% {
   background-color: #35302a; }
 75% {
-  background-color: #352431; } }
-    a{
-      color: #ddd;
-      text-decoration: none;
-      font-size: 1.1rem;
-      font-weight: 700;
-    }
+  background-color: #352431; } 
+}
+
+.scrollToTop{
+    height: 50px;
+    width: 50px;
+    color: #2a2c35;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 auto;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; 
+    text-align: center;
+    font-size: 2.5rem
+}
+
+a{
+    color: #ddd;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
  
  /* showcase */
  #showcase{
@@ -44,6 +62,41 @@ body{
   #showcase h2{
       font-size: 2rem;
   }
+  .section-main{
+      opacity: 0;
+    -webkit-animation-name: fadeIn; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: both;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes fadeIn {
+    from{opacity: 0.0;}
+    to{opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes fadeIn {
+    from{opacity: 0.0;}
+    to{opacity: 1;}
+}
+.section-main i{
+    padding: 0 0.5rem;
+}
+.section-main .mapLocation{
+    font-size: 2rem
+}
+.btn{
+    background-color: #ddd;
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+    border-radius: 20%;
+    color: #444
+}
+
 /* #region */
 .section{
     padding: 2rem 0;
@@ -54,7 +107,7 @@ body{
     margin-bottom: 1rem;
     text-align: start;
 }
-.section h3{
+.experience h3{
   font-size: 2.rem;
   color: #444
 }
@@ -80,17 +133,25 @@ body{
 /* On mouse-over, add a deeper shadow */
 .experience:hover {
     box-shadow: 0 10px 20px 0 rgba(209, 206, 206, 0.2);
+    background-color: rgb(247, 245, 245);
 }
-.skill-icon{
-    overflow: scroll;
+.skill-icons{
+    overflow: auto;
+    color: #eee;
 }
-.skill-icon-list{
-    font-size: 3rem;
-    text-align: justify;
+#skills h3{
+    text-align: start;
 }
 .skill-icon-list-item{
-    list-style: none;
+    font-size: 4rem;
     display: inline;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+.workflow-points{
+    text-align: start;
+    list-style-type: none;
 }
 
  /* utils */
