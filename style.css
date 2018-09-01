@@ -42,12 +42,13 @@ body{
     box-sizing: border-box;
 }
 .scrollToTop{
+    cursor: pointer;
     height: 50px;
     width: 50px;
     color: #2a2c35;
     background-color: #bbb;
     border-radius: 50%;
-    display: inline-block;
+    display: none; /* to keep it hidden on load inline-block;*/
     margin: 0 auto;
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
@@ -259,6 +260,7 @@ footer{
 }
 footer .footer-bottom{
     padding: 0.5rem;
+    font-size: 1rem;
 }
 
 /**for phone**/
@@ -348,5 +350,9 @@ footer .footer-bottom{
       background-color: #333;
       width: 100%;
       position: relative;
+    }
+    footer .footer-bottom{
+        padding: 0.5rem;
+        font-size: 0.7rem;
     }
   }

@@ -39,3 +39,11 @@ $(' a').on('click', function(event) {
 $('.scrollToTop').on('click', function(e) {
   $('html, body').animate({scrollTop: "0"},800);
 });
+$(window).on("scroll", function() {
+  var scrollPos = $(window).scrollTop();
+  if (scrollPos <= 0) {
+      $(".scrollToTop").fadeOut();
+  } else {
+      $(".scrollToTop").fadeIn();
+  }
+});
