@@ -227,6 +227,11 @@ a{
     color: #444;
     text-decoration: none;
   }
+  .logo-main:hover {
+    color: #444;
+    background: #eee;
+    padding: 0;
+  }
   nav a:hover {
     display: inline-block;
     width: 100px;
@@ -337,6 +342,7 @@ footer .footer-bottom{
       background: #444;
       color: #eee;
     }
+   
     nav a#openup:after {
       content: "|||";
       transform: rotate(-90deg);
