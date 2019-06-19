@@ -147,6 +147,10 @@ a{
     text-align: start;
 }
 
+#skills {
+  height: fit-content;
+}
+
 .skill-icons{
     overflow: auto;
     color: #eee;
@@ -154,39 +158,38 @@ a{
 #skills h3{
     text-align: start;
 }
-#skills ul{
-  list-style: none;
-  float: left;
-}
-#skills li{
-  margin: 10px 0;
-  
-}
-.skill-icon-list-item {
-    font-size: 4rem;
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
-    position: relative;
-    
-    
-}
-.skill-icon-list-item::after {
-  content: "";
-  position: absolute;
+
+
+.skill-percentage {
+  position: relative;
   background-color: #FF9F55;
-  bottom: 5px;
-  left: 50%;
-  margin: 5px 50px;
-  height: 15px; 
-	border-radius:10px; 
+  height: 25px;
+  border-top-right-radius: 2em 5em;
+  border-bottom-right-radius: 2em 5em;
+  width: var(--percent);
 }
 
-.java::after{
-  content:"90%";
-  color: #2a2c35;
-  font-size: 14px;
-  font-weight: 800;
-  width: 50vw;
+.skillbar {
+  width: 100%;
+  height: 25px;
+  display: block;
+  background: rgba(218, 213, 213, 0.04);
+  margin-bottom: 15px;
+  position: relative;
+}
+.skill-icon-list-item {
+  font-size: 4rem;
+  
+}
+
+.skill-title {
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  padding: 0px 5px;
+  color: #ffffff;
+  z-index: 2;
+  background: transparent;
 }
 
 .workflow-points{
@@ -298,6 +301,9 @@ a{
   margin: 5px 0
 }
 
+#interests {
+  height: 50vh;
+}
 
 
  /* utils */
