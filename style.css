@@ -183,10 +183,10 @@ a{
 }
 
 .skill-title {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   position: absolute;
-  padding: 0px 5px;
+  padding: 4px 5px;
   color: #ffffff;
   z-index: 2;
   background: transparent;
@@ -488,6 +488,36 @@ footer .footer-bottom{
         padding: 0.5rem;
         font-size: 0.7rem;
     }
+
+    /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .timeline-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .timeline-container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
   }
   /**for phone horizontal**/
 @media screen and (max-height: 580px) {
